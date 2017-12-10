@@ -2,16 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  Quote,
-  Slide,
-  Text,
-  Image
-} from "spectacle";
+import { Deck, Heading, Slide, Text, Image } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
@@ -128,13 +119,8 @@ export default class Presentation extends React.Component {
               Thank you!
             </Heading>
           </div>
-          <div style={{ marginBottom: "50px" }}>
-            <Heading size={4} textColor="white">
-              Happy Holidays!
-            </Heading>
-          </div>
           <Heading size={4} textColor="white">
-            🎄
+            Happy Holidays!
           </Heading>
         </Slide>
       </Deck>
