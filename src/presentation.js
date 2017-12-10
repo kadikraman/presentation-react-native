@@ -7,9 +7,12 @@ import { Deck, Heading, Slide, Text, Image } from "spectacle";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-import reactNativeMobileSrc from "./assets/mobile.jpg";
-import reactLoveSrc from "./assets/reactLove.png";
-import iosAndroidWindowsSrc from "./assets/iosAndroidWindows.png";
+// import reactNativeMobileSrc from "./assets/mobile.jpg";
+// import reactLoveSrc from "./assets/reactLove.png";
+// import iosAndroidWindowsSrc from "./assets/iosAndroidWindows.png";
+const reactNativeMobileSrc = "https://udemy-images.udemy.com/course/750x422/891474_a221_4.jpg";
+const reactLoveSrc = "http://devstickers.com/assets/img/pro/iy1c.png";
+const iosAndroidWindowsSrc = "http://geekongadgets.com/wp-content/uploads/2015/08/iOS_Android_Windows_Phone_Wide.png"
 
 // Require CSS
 require("normalize.css");
