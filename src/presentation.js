@@ -18,6 +18,7 @@ import createTheme from "spectacle/lib/themes/default";
 
 import reactNativeMobileSrc from "./assets/mobile.jpg";
 import reactLoveSrc from "./assets/reactLove.png";
+import iosAndroidWindowsSrc from "./assets/iosAndroidWindows.png";
 
 // Require CSS
 require("normalize.css");
@@ -38,30 +39,30 @@ const theme = createTheme(
   }
 );
 
+const NormalHeading = ({ children }) => (
+  <Heading size={4} textColor="white">
+    {children}
+  </Heading>
+);
+
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
         <Slide bgColor="christmasRed">
-          <Heading fit caps lineHeight={1} textColor="white">
+          <Heading fit caps textColor="white">
             React to React Native
           </Heading>
-          <Text size={4} textColor="christmasYellow" bold>
+          <Text textColor="christmasYellow" bold>
             How Hard Could It Be?
           </Text>
           <div style={{ marginTop: "50px" }}>
-            <Text size={6} textColor="white">
-              Kadi Kraman
-            </Text>
-            <Text size={6} textColor="white">
-              Formidable Labs
-            </Text>
+            <Text textColor="white">Kadi Kraman</Text>
+            <Text textColor="white">Formidable Labs</Text>
           </div>
         </Slide>
         <Slide bgColor="christmasGreen" textColor="white">
-          <Heading size={4} textColor="white" caps>
-            React - game changer for the web!
-          </Heading>
+          <NormalHeading>React - game changer for the web!</NormalHeading>
         </Slide>
         <Slide bgColor="christmasRed" textColor="white">
           <Image src={reactLoveSrc} />
@@ -73,16 +74,68 @@ export default class Presentation extends React.Component {
           {/* Embracing functional programming methodology */}
         </Slide>
         <Slide bgColor="blue" textColor="white">
-          <Heading size={4} textColor="white" caps>
-            React Native - game changer for mobile?
-          </Heading>
+          <NormalHeading>React Native - game changer for mobile?</NormalHeading>
           <Image src={reactNativeMobileSrc} />
         </Slide>
         <Slide bgColor="black" textColor="white">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+          <div style={{ marginBottom: "50px" }}>
+            <NormalHeading>Build once, run anywhere</NormalHeading>
+          </div>
+          <Image src={iosAndroidWindowsSrc} />
+        </Slide>
+        <Slide bgColor="christmasRed" textColor="white">
+          <NormalHeading>How wasy is it really to get started?</NormalHeading>
+          {/* Compare create react app create react native app) */}
+        </Slide>
+        <Slide bgColor="christmasYellow" textColor="white">
+          <NormalHeading>How similar is the code to React code</NormalHeading>
+        </Slide>
+        <Slide bgColor="blue" textColor="white">
+          <NormalHeading>What's different</NormalHeading>
+        </Slide>
+        <Slide bgColor="christmasRed" textColor="white">
+          <NormalHeading>Testing</NormalHeading>
+        </Slide>
+        <Slide bgColor="christmasYellow" textColor="white">
+          <NormalHeading>Domain specific code</NormalHeading>
+        </Slide>
+        <Slide bgColor="blue" textColor="white">
+          <NormalHeading>What's harder in React Native</NormalHeading>
+        </Slide>
+        <Slide bgColor="christmasRed" textColor="white">
+          <NormalHeading>The Android experience</NormalHeading>
+        </Slide>
+        <Slide bgColor="christmasYellow" textColor="white">
+          <NormalHeading>Demployment to production</NormalHeading>
+        </Slide>
+        <Slide bgColor="blue" textColor="white">
+          <NormalHeading>
+            Can I be a React Native developer, without ever having to touch
+            Native code?
+          </NormalHeading>
+          {/* To a point. Kind of like can you be a React Developer only using Create React App */}
+        </Slide>
+        <Slide bgColor="black" textColor="white">
+          <Heading size={4} textColor="white">
+            React Native is like candy that's used to lure web developers into
+            mobile development
+          </Heading>
+        </Slide>
+
+        <Slide bgColor="christmasRed" textColor="white">
+          <div style={{ marginBottom: "100px" }}>
+            <Heading size={4} textColor="white">
+              Thank you!
+            </Heading>
+          </div>
+          <div style={{ marginBottom: "50px" }}>
+            <Heading size={4} textColor="white">
+              Happy Holidays!
+            </Heading>
+          </div>
+          <Heading size={4} textColor="white">
+            🎄
+          </Heading>
         </Slide>
       </Deck>
     );
