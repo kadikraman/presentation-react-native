@@ -10,6 +10,7 @@ If you've used React, you've probably also head of React Native: a wonderful fai
 ## Deploy
 - `yarn build`
 - replace `/static` with `./static` in `./build` (can use `sed -i -e 's/\/static/\.\/static/g' ./build/index.html`)
+- replace `static/media` with `presentation-react-native/static/media` in the built bundle (can use `sed -i -e 's/static\/media/presentation-react-native\/static\/media/g' <bundle>`)
 - `yarn deploy`
 
 
