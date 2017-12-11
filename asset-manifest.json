@@ -1,7 +1,9 @@
 {
   "main.css": "static/css/main.653da357.css",
   "main.css.map": "static/css/main.653da357.css.map",
-  "main.js": "static/js/main.e90ea272.js",
-  "main.js.map": "static/js/main.e90ea272.js.map",
-  "static/media/mobile.jpg": "static/media/mobile.2ec59a7d.jpg"
+  "main.js": "static/js/main.eb6d69f1.js",
+  "main.js.map": "static/js/main.eb6d69f1.js.map",
+  "static/media/iosAndroidWindows.png": "static/media/iosAndroidWindows.4ad939bb.png",
+  "static/media/mobile.jpg": "static/media/mobile.2ec59a7d.jpg",
+  "static/media/reactLove.png": "static/media/reactLove.3cecce19.png"
 }
