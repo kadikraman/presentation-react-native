@@ -1,9 +1,17 @@
 {
   "main.css": "static/css/main.653da357.css",
   "main.css.map": "static/css/main.653da357.css.map",
-  "main.js": "static/js/main.eb6d69f1.js",
-  "main.js.map": "static/js/main.eb6d69f1.js.map",
+  "main.js": "static/js/main.42c97450.js",
+  "main.js.map": "static/js/main.42c97450.js.map",
+  "static/media/androidEcosystem.png": "static/media/androidEcosystem.d3a3e0c9.png",
   "static/media/iosAndroidWindows.png": "static/media/iosAndroidWindows.4ad939bb.png",
+  "static/media/iosEcosystem.png": "static/media/iosEcosystem.3f1e3944.png",
   "static/media/mobile.jpg": "static/media/mobile.2ec59a7d.jpg",
-  "static/media/reactLove.png": "static/media/reactLove.3cecce19.png"
+  "static/media/platformSpecificFile.png": "static/media/platformSpecificFile.3a3057fe.png",
+  "static/media/platformSpecificVar.png": "static/media/platformSpecificVar.a59e0b73.png",
+  "static/media/reactLove.png": "static/media/reactLove.3cecce19.png",
+  "static/media/welcomeToReact.png": "static/media/welcomeToReact.9394d18c.png",
+  "static/media/welcomeToReactCode.png": "static/media/welcomeToReactCode.8664e96f.png",
+  "static/media/welcomeToReactNative.jpeg": "static/media/welcomeToReactNative.cd973b9c.jpeg",
+  "static/media/welcomeToReactNativeCode.png": "static/media/welcomeToReactNativeCode.76f908ae.png"
 }
