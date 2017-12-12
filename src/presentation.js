@@ -34,6 +34,7 @@ import welcomeToReactNative from './assets/welcomeToReactNative.jpeg';
 import welcomeToReactNativeCode from './assets/welcomeToReactNativeCode.png';
 import platformSpecificFile from './assets/platformSpecificFile.png';
 import platformSpecificVar from './assets/platformSpecificVar.png';
+import sewerClown from './assets/sewerClown.jpg';
 
 // Require CSS
 require('normalize.css');
@@ -99,6 +100,13 @@ export default class Presentation extends React.Component {
         <Slide bgColor="black">
           <Image src={androidEcosystem} />
         </Slide>
+        <Slide bgColor="black" textColor="white">
+          <div style={{ marginBottom: "50px" }}>
+            <NormalHeading>Build once, run anywhere</NormalHeading>
+          </div>
+          {/*  TODO: remove windows */}
+          <Image src={iosAndroidWindowsSrc} />
+        </Slide>
         <Slide bgColor="christmasRed">
           <Heading textColor="white">How?</Heading>
           <Text textColor="white" bold>
@@ -136,11 +144,14 @@ export default class Presentation extends React.Component {
           <Text />
           <Code>yarn start</Code>
         </Slide>
+        {/*  TODO: add screenshot of terminal */}
         <Slide bgColor="christmasRed">
           <Image src={welcomeToReactNative} width="40%" />
         </Slide>
         <Slide bgColor="christmasRed">
           <Image src={welcomeToReactNativeCode} />
+          {/*  TODO: smaller height */}
+
         </Slide>
         <Slide bgColor="christmasRed">
           <Heading fit textColor="white">
@@ -167,19 +178,12 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="white">
             <ListItem>CAN use any JS modules</ListItem>
-            <ListItem>CANNOT use localStorage (has AsyncStorage)</ListItem>
+            <ListItem>CANNOT use browser/window functions</ListItem>
             <ListItem>MUST worry about the keyboard</ListItem>
             <ListItem>MUST worry about "working offline"</ListItem>
           </List>
         </Slide>
-        <Slide bgColor="christmasRed">
-          <div style={{ marginBottom: '50px' }}>
-            <Heading fit textColor="white">
-              Platform-specific code
-            </Heading>
-          </div>
-          <Image src={platformSpecificFile} />
-        </Slide>
+        {/* TODO: slide about border radius/shadow  */}
         <Slide bgColor="christmasRed">
           <div style={{ marginBottom: '50px' }}>
             <Heading fit textColor="white">
@@ -188,6 +192,17 @@ export default class Presentation extends React.Component {
           </div>
           <Image src={platformSpecificVar} />
         </Slide>
+        {/* TODO: slide about flasy toggle button  */}
+        <Slide bgColor="christmasRed">
+          <div style={{ marginBottom: '50px' }}>
+            <Heading fit textColor="white">
+              Platform-specific code
+            </Heading>
+          </div>
+          <Image src={platformSpecificFile} />
+        </Slide>
+        {/* TODO: slide about image sizes */}
+
         <Slide bgColor="blue" textColor="white">
           <NormalHeading>Why React Native?</NormalHeading>
           <Image src={reactNativeMobileSrc} />
@@ -211,12 +226,17 @@ export default class Presentation extends React.Component {
             Can I be a React Native developer, without ever having to touch
             Native code?
           </NormalHeading>
-          {/* To a point. Kind of like can you be a React Developer only using Create React App */}
         </Slide>
         <Slide bgColor="black" textColor="white">
           <Heading size={4} textColor="white">
-            React Native is like candy that's used to lure web developers into
-            mobile development
+            Hey kid, you can write JS on Mobile here
+          </Heading>
+          <Image src={sewerClown} />
+
+        </Slide>
+        <Slide bgColor="blue" textColor="white">
+          <Heading size={4} textColor="white">
+          Am I saying you should drop everything and go build some React Native apps?
           </Heading>
         </Slide>
 
