@@ -37,6 +37,7 @@ import sewerClown from './assets/sewerClown.jpg';
 import imageSizes from './assets/imageSizes.png';
 import expoQRCode from './assets/expoQRCode.png';
 import expo from './assets/expo.png';
+import magic from './assets/magic.gif';
 
 // Require CSS
 require('normalize.css');
@@ -106,23 +107,26 @@ export default class Presentation extends React.Component {
             <NormalHeading>Build once, run anywhere</NormalHeading>
         </Slide>
         <Slide bgColor="christmasRed">
+          <Image src={magic} width="600px"/>
+        </Slide>
+        <Slide bgColor="christmasRed">
           <Heading textColor="white">How?</Heading>
           <Text textColor="white" bold>
-            By mapping each UI element to their native counterparts in both
+            By mapping each element to their native counterparts in both
             frameworks
           </Text>
         </Slide>
         <Slide bgColor="christmasRed" textColor="white">
           <NormalHeading>How easy is it really to get started?</NormalHeading>
         </Slide>
-        <Slide bgColor="christmasRed">
-          <Code>yarn global add create-react-app</Code>
+        <Slide bgColor="christmasRed" textColor="white">
+          <Code textColor="white">yarn global add create-react-app</Code>
           <Text />
-          <Code>create-react-app my-app</Code>
+          <Code textColor="white">create-react-app my-app</Code>
           <Text />
-          <Code>cd my-app/</Code>
+          <Code textColor="white">cd my-app/</Code>
           <Text />
-          <Code>yarn start</Code>
+          <Code textColor="white">yarn start</Code>
         </Slide>
         <Slide bgColor="christmasRed">
           <Image src={welcomeToReact} />
@@ -139,13 +143,13 @@ export default class Presentation extends React.Component {
           <Image src={expo} />
         </Slide>
         <Slide bgColor="christmasRed">
-          <Code>yarn global add create-react-native-app</Code>
+          <Code textColor="white">yarn global add create-react-native-app</Code>
           <Text />
-          <Code>create-react-native-app my-app</Code>
+          <Code textColor="white">create-react-native-app my-app</Code>
           <Text />
-          <Code>cd my-app/</Code>
+          <Code textColor="white">cd my-app/</Code>
           <Text />
-          <Code>yarn start</Code>
+          <Code textColor="white">yarn start</Code>
         </Slide>
         <Slide bgColor="black">
           <Image src={expoQRCode} width="50%" />
@@ -170,6 +174,7 @@ export default class Presentation extends React.Component {
             Differences in syntax
           </Heading>
           <List textColor="white">
+            <ListItem>View instead of div</ListItem>
             <ListItem>No buttons: touchables instead</ListItem>
             <ListItem>No onClick: onPress instead</ListItem>
             <ListItem>Text elements must be in {`<Text>`}</ListItem>
@@ -252,14 +257,15 @@ export default class Presentation extends React.Component {
               Thank you!
             </Heading>
           </div>
+          <div style={{ marginBottom: '100px' }}>
           <Heading size={4} textColor="white">
-            Happy Holidays!
+            Happy Holidays! 🎄
           </Heading>
-          <div style={{ marginTop: '100px' }}>
-            <Heading size={4} textColor="white">
-              🎄
-            </Heading>
           </div>
+          <div style={{ marginBottom: '50px' }}>
+            <Text textColor="white" fit>Google: "React Native getting started"</Text>
+          </div>
+          <Text textColor="white" fit>https://facebook.github.io/react-native/docs/getting-started.html</Text>
         </Slide>
       </Deck>
     );
