@@ -22,7 +22,6 @@ import createTheme from 'spectacle/lib/themes/default';
 
 import reactNativeMobileSrc from './assets/mobile.jpg';
 import reactLoveSrc from './assets/reactLove.png';
-import iosAndroidWindowsSrc from './assets/iosAndroidWindows.png';
 import formidableWhite from './assets/formidableWhite.png';
 import formidableBlack from './assets/formidableBlack.png';
 import formidableRed from './assets/formidableRed.png';
@@ -35,6 +34,8 @@ import welcomeToReactNativeCode from './assets/welcomeToReactNativeCode.png';
 import platformSpecificFile from './assets/platformSpecificFile.png';
 import platformSpecificVar from './assets/platformSpecificVar.png';
 import sewerClown from './assets/sewerClown.jpg';
+import imageSizes from './assets/imageSizes.png';
+import expoQRCode from './assets/expoQRCode.png';
 
 // Require CSS
 require('normalize.css');
@@ -101,11 +102,7 @@ export default class Presentation extends React.Component {
           <Image src={androidEcosystem} />
         </Slide>
         <Slide bgColor="black" textColor="white">
-          <div style={{ marginBottom: "50px" }}>
             <NormalHeading>Build once, run anywhere</NormalHeading>
-          </div>
-          {/*  TODO: remove windows */}
-          <Image src={iosAndroidWindowsSrc} />
         </Slide>
         <Slide bgColor="christmasRed">
           <Heading textColor="white">How?</Heading>
@@ -113,12 +110,9 @@ export default class Presentation extends React.Component {
             By mapping each UI element to their native counterparts in both
             frameworks
           </Text>
-          {/* So how did RN do this? Both ecosystems have Text, View, Button etc */}
-          {/* Kind of same as if (prod) then this else that */}
         </Slide>
         <Slide bgColor="christmasRed" textColor="white">
           <NormalHeading>How easy is it really to get started?</NormalHeading>
-          {/* Compare create react app create react native app) */}
         </Slide>
         <Slide bgColor="christmasRed">
           <Code>yarn global add create-react-app</Code>
@@ -144,14 +138,14 @@ export default class Presentation extends React.Component {
           <Text />
           <Code>yarn start</Code>
         </Slide>
-        {/*  TODO: add screenshot of terminal */}
+        <Slide bgColor="black">
+          <Image src={expoQRCode} width="50%" />
+        </Slide>
         <Slide bgColor="christmasRed">
           <Image src={welcomeToReactNative} width="40%" />
         </Slide>
         <Slide bgColor="christmasRed">
-          <Image src={welcomeToReactNativeCode} />
-          {/*  TODO: smaller height */}
-
+          <Image src={welcomeToReactNativeCode} width="70%" />
         </Slide>
         <Slide bgColor="christmasRed">
           <Heading fit textColor="white">
@@ -201,17 +195,20 @@ export default class Presentation extends React.Component {
           </div>
           <Image src={platformSpecificFile} />
         </Slide>
-        {/* TODO: slide about image sizes */}
-
+        <Slide bgColor="christmasYellow">
+          <div style={{ marginBottom: '50px' }}>
+            <Heading fit textColor="white">
+              Platform-specific code
+            </Heading>
+          </div>
+          <Image src={imageSizes} />
+        </Slide>
         <Slide bgColor="blue" textColor="white">
           <NormalHeading>Why React Native?</NormalHeading>
           <Image src={reactNativeMobileSrc} />
         </Slide>
         <Slide bgColor="black" textColor="white">
-          <div style={{ marginBottom: '50px' }}>
             <NormalHeading>Build once, run anywhere</NormalHeading>
-          </div>
-          <Image src={iosAndroidWindowsSrc} />
         </Slide>
         <Slide bgColor="christmasRed" textColor="white">
           <NormalHeading>The JavaScript takeover</NormalHeading>
