@@ -36,6 +36,7 @@ import platformSpecificVar from './assets/platformSpecificVar.png';
 import sewerClown from './assets/sewerClown.jpg';
 import imageSizes from './assets/imageSizes.png';
 import expoQRCode from './assets/expoQRCode.png';
+import expo from './assets/expo.png';
 
 // Require CSS
 require('normalize.css');
@@ -129,6 +130,14 @@ export default class Presentation extends React.Component {
         <Slide bgColor="christmasRed">
           <Image src={welcomeToReactCode} />
         </Slide>
+        <Slide bgColor="white">
+          <div style={{ marginBottom: '50px' }}>
+            <Heading fit textColor="black">
+              Expo - React Native toolchain
+            </Heading>
+          </div>
+          <Image src={expo} />
+        </Slide>
         <Slide bgColor="christmasRed">
           <Code>yarn global add create-react-native-app</Code>
           <Text />
@@ -172,7 +181,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="white">
             <ListItem>CAN use any JS modules</ListItem>
-            <ListItem>CANNOT use browser/window functions</ListItem>
+            <ListItem>localStorage vs AsyncStorage</ListItem>
             <ListItem>MUST worry about the keyboard</ListItem>
             <ListItem>MUST worry about "working offline"</ListItem>
           </List>
